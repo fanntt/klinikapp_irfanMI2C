@@ -107,10 +107,12 @@
                 android:textAlignment="viewEnd" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/txtSignIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:clickable="true"
+                android:contextClickable="true"
                 android:text=" Sign In"
                 android:textColor="#66C997" />
         </LinearLayout>
