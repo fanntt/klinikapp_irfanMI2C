@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.fanntt.klinikapp_irfanmi2c.screen.HomeDoctorsActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         //splash screen
         //handle untuk delay dalam beberapa detik
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this,Activity_Start2::class.java)
+            val intent = Intent(this,HomeDoctorsActivity::class.java)
             startActivity(intent)
             finish()// agar ketika pindah ke page 2 , itu tidak back ke splash screen
         },3000)
